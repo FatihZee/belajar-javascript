@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("kalkulator.png") no-repeat center center;
+  background-size: cover;
+  margin: 0;
+  position: relative;
+  color: white; /* Warna teks putih untuk kontras */
+}
+
+#kalkulator-container {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Transparansi 50% dengan latar belakang hitam */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow yang lebih halus */
+  border: 2px solid white; /* Garis tepi putih */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid white; /* Garis tepi putih */
+  border-radius: 4px;
+  box-sizing: border-box;
+  min-width: 200px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Transparansi yang sama untuk input, select, dan button */
+  color: white; /* Warna teks putih untuk kontras */
+}
+
+button {
+  background-color: #007bff;
+  border-color: white; /* Garis tepi putih pada button */
+}
+
+button:hover {
+  background-color: #0056b3;
+  border-color: white; /* Tetapkan garis tepi putih bahkan saat di-hover */
+}
+
+input#hasil {
+  font-weight: bold;
+}
+
+#kalkulator-container h1 {
+  font-size: 24px;
+  color: white; /* Atur warna teks header jika diperlukan */
+  margin-bottom: 15px;
+}

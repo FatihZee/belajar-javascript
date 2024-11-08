@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s ease;
+}
+
+.welcome-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("halamanAwal.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+button {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Background hitam semi-transparan */
+  border: 2px solid black; /* Tepian hitam */
+  border-radius: 20px; /* Melengkungkan sudut-sudut */
+  cursor: pointer;
+  min-width: 200px;
+  box-sizing: content-box;
+  transition: background-color 0.3s; /* Transisi halus untuk efek hover */
+}
+
+button:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Lebih terang dan kurang transparan saat di-hover */
+}
